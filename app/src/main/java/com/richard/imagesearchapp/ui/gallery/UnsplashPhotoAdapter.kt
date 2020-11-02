@@ -16,8 +16,7 @@ class UnsplashPhotoAdapter : PagingDataAdapter<Photo, UnsplashPhotoAdapter.Photo
 ) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
-        val binding =
-            ItemUnsplashPhotoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemUnsplashPhotoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
         return PhotoViewHolder(binding)
     }
@@ -30,8 +29,7 @@ class UnsplashPhotoAdapter : PagingDataAdapter<Photo, UnsplashPhotoAdapter.Photo
         }
     }
 
-    class PhotoViewHolder(private val binding: ItemUnsplashPhotoBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    class PhotoViewHolder(private val binding: ItemUnsplashPhotoBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(photo: Photo) {
             binding.apply {
